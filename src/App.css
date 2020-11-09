@@ -1,0 +1,82 @@
+body{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+#root{
+  width: 45%;
+}
+.todoBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.todoBox h2{
+  text-align: center;
+}
+
+.todoBox input[type=text]{
+  align-self: center;
+  width: 60%;
+  padding:1%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 10px;
+  margin-bottom:15px;
+}
+
+.warningMessage{
+  color:000;
+  font-weight: Times;
+  text-align: center;
+  background-color: rgb(250, 180, 114);
+  border: 2px solid rgb(102, 255, 0);
+}
+
+.todoBox input[type=text]:focus {
+  outline: none;
+}
+
+.todoBox ul, .todoBox li{
+  display: block;
+}
+.todoBox ul{
+  padding-left: 0px;
+}
+
+.todoBox li{
+  padding: 5px 0;
+  border-bottom: 2px solid #DDD;
+}
+
+.todoBox li input[type="checkbox"]{
+  margin-right: 3%;
+}
+
+.todoBox li span{
+  float: right;
+}
+
+.todoBox li img{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  float: right;
+  margin-left: 20px;
+}
+
+.doneTask{
+  text-decoration: line-through;
+}
+
+
+.taskBottom{
+  display: flex;
+  margin-top:10px;
+}
+
+.taskBottom .RBox{
+  margin-left: auto;
+  color:rgb(0, 0, 0);
+  text-decoration: underline;
+}
